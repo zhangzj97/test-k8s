@@ -2,14 +2,17 @@ version: "3.8"
 
 services: 
   test-k8s-test1: 
+    image: dz-test:1
     container_name: test-k8s-test1
     ports:
       - 8071:80
   test-k8s-test2: 
+    image: dz-test:2
     container_name: test-k8s-test2
     ports:
       - 8072:80
   test-k8s-test3: 
+    image: dz-test:3
     container_name: test-k8s-test3
     ports:
       - 8073:80
